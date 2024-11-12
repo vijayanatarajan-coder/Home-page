@@ -47,9 +47,9 @@ body {
 .about-me {
   max-width: 541px;
   max-height: 366px;
-  font-size: 16px;
-  font-weight: 300;
-  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Roboto";
   background-color: white;
   position: relative;
   left: -121px;
@@ -75,6 +75,9 @@ body {
   .full-name {
     transform: translate(77%, -663%);
     font-size: 3.5rem;
+  }
+  .header-socials {
+    display: none;
   }
   .header-img {
     max-width: 455px;
@@ -133,6 +136,9 @@ body {
   .p {
     padding-left: 230px;
   }
+  .header-socials {
+    display: none;
+  }
 }
 @media (min-width: 100px) and (max-width: 299px) {
   .full-name {
@@ -148,10 +154,14 @@ body {
     min-width: 582px;
     min-height: 379px;
     left: 93px;
+    font-size: 1.5rem;
   }
   .hero-header img {
     position: relative;
     top: 100px;
+  }
+  .header-socials {
+    display: none;
   }
   #header-container {
     display: grid;
