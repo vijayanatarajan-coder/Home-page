@@ -7,6 +7,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  width: 1089px;
 }
 
 #header-container {
@@ -27,7 +28,7 @@ body {
   max-width: 424px;
   max-height: 451px;
   display: block;
-  margin: auto;
+  margin-left: 42px;
   box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.37);
 }
 
@@ -36,7 +37,7 @@ body {
 }
 
 .full-name {
-  transform: translate(5%, -117%);
+  transform: translate(16%, -135%);
   font-size: 3.2rem;
   text-align: left;
   color: rgb(255, 255, 255);
@@ -52,7 +53,7 @@ body {
   font-family: "Roboto";
   background-color: white;
   position: relative;
-  left: -121px;
+  left: -44px;
   top: 38px;
   padding: 25px;
   box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.37);
@@ -70,6 +71,118 @@ body {
 .header-socials {
   float: right;
   margin-top: 30px;
+}
+
+/*main section */
+
+.porto-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 1rem;
+}
+.porto-card {
+  max-width: 295px;
+  border: 1px solid rgb(187, 187, 187);
+  border-radius: 3px;
+  box-shadow: 2px 3px 15px 1px rgba(129, 129, 129, 0.651);
+}
+.porto-title {
+  position: relative;
+  top: -40px;
+  font-size: 36px;
+  font-weight: 400;
+  font-family: "Playfair Display", serif;
+}
+#portofolio {
+  padding: 100px 50px;
+}
+.project-desc {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.645);
+  font-family: "Roboto";
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.project-title {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Playfair Display", serif;
+}
+.project-title-container {
+  display: flex;
+  padding-top: 10px;
+}
+
+/* footer section */
+.footer {
+  background-color: #0890b3;
+  display: flex;
+  padding: 50px;
+}
+.contact {
+  color: #fff;
+}
+
+.svg-icons-footer {
+  width: 40px;
+  fill: #fff;
+  margin-left: 5px;
+}
+.svg-icons-footer-phone {
+  position: relative;
+  width: 30px;
+  fill: #fff;
+  left: -30px;
+}
+.phone-mail {
+  position: relative;
+  top: 30px;
+}
+
+.svg-icons-footer-mail {
+  position: relative;
+  width: 30px;
+  fill: #fff;
+  left: -3px;
+}
+.footer-icons {
+  margin-top: 60px;
+  margin-left: -9px;
+}
+footer h2 {
+  font-size: 36px;
+  font-weight: 400;
+  font-family: "Playfair Display", serif;
+}
+footer {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Roboto";
+  line-height: 32px;
+}
+.footer-text {
+  margin-top: 30px;
+}
+.address {
+  margin-top: 30px;
+}
+.phone {
+  display: flex;
+}
+.phone p {
+  position: relative;
+  left: -70px;
+}
+.mail p {
+  position: relative;
+  left: 10px;
+}
+.mail {
+  display: flex;
+  align-items: stretch;
 }
 @media (min-width: 300px) and (max-width: 599px) {
   .full-name {
@@ -102,95 +215,145 @@ body {
 }
 @media (min-width: 600px) and (max-width: 1199px) {
   .header-img {
-    min-width: 250px;
-    max-height: 250px;
-    display: block;
-    margin-left: 45px;
+    position: relative;
+    left: -55px;
+    top: -5px;
     box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.37);
   }
-  #header-container {
-    display: grid;
-    padding-top: 47px;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-  }
   .about-me {
-    min-width: 512px;
-    min-height: 360px;
+    max-height: 446px;
     z-index: -1;
-    left: -282px;
-    top: 114px;
-    max-width: 70vw;
+    left: -232px;
+    top: -19px;
   }
-  .background {
-    width: 100%;
+  #portofolio {
+    padding: 58px;
   }
   .full-name {
-    transform: translate(123%, -516%);
+    transform: translate(-2%, -158%);
     font-size: 2.1rem;
+  }
+  .porto-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+    justify-content: start;
   }
 
   .about-me h2 {
-    padding-left: 243px;
+    padding-left: 172px;
   }
-  .p {
-    padding-left: 230px;
+  .paragraph {
+    padding-left: 55px;
   }
   .header-socials {
     display: none;
   }
+  footer {
+    position: relative;
+    left: -105px;
+  }
+  .porto-title {
+    color: #fff;
+  }
 }
-@media (min-width: 100px) and (max-width: 299px) {
+@media (max-width: 100px) {
+  body {
+    width: 100%;
+  }
   .full-name {
-    transform: translate(46%, -663%);
-    font-size: 3.5rem;
+    transform: translate(56%, -153%);
+    font-size: 0.8rem;
+  }
+  .porto-container {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .background {
+    width: 217%;
+  }
+  #portofolio {
+    padding: 17px 0px;
+  }
+  .about-me h2 {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Playfair Display", serif;
+  }
+  .about-me {
+    font-size: 10px;
+    font-weight: 400;
+    font-family: "Roboto";
+    background-color: white;
+    width: 196px;
+    left: 10px;
+    box-shadow: none;
+    top: 0px;
+  }
+  .about-me > div {
+    color: rgba(0, 0, 0, 0.645);
+    line-height: 20px;
+  }
+
+  #header-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .svg-icons {
+    width: 20px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    width: 217%;
+  }
+  .footer-title {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Playfair Display", serif;
   }
   .header-img {
-    max-width: 455px;
-    max-height: 486px;
-    margin-left: 187px;
+    margin-top: -30px;
   }
-  .about-me {
-    min-width: 582px;
-    min-height: 379px;
-    left: 93px;
-    font-size: 1.5rem;
+  .footer {
+    padding: 15px;
+    font-size: 10px;
+    font-family: "Roboto";
   }
-  .hero-header img {
+  .svg-icons-footer-phone {
+    width: 20px;
+  }
+  .svg-icons-footer-mail {
+    width: 20px;
+  }
+  .phone p {
     position: relative;
-    top: 100px;
+    left: -55px;
   }
-  .header-socials {
-    display: none;
+  .svg-icons-footer-mail {
+    left: -11px;
   }
-  #header-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
+  .mail p {
+    position: relative;
+    left: -2px;
   }
-}
-/*@media (min-width: 700px) {
-  .about-me {
-    min-width: 661px;
+  .footer-text {
+    margin-top: 20px;
   }
-}
-@media (min-width: 800px) {
-  .about-me {
-    min-width: 748px;
+  .address {
+    margin-top: 20px;
   }
-}
- @media (min-width: 900px) {
-  .about-me {
-    min-width: 881px;
+  .phone-mail {
+    position: relative;
+    top: 20px;
   }
-}*/
-/* @media (min-width: 1000px) {
-  .p {
-    padding-left: 127px;
+  .svg-icons-footer {
+    width: 30px;
+    fill: #fff;
+    margin-left: 5px;
+  }
+  .footer-icons {
+    margin-top: 40px;
+    margin-left: 5px;
   }
 }
-@media (min-width: 1100px) {
-  .p {
-    padding-left: 105px;
-  }
-} */
